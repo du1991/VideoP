@@ -18,6 +18,7 @@ public class MoviesController{
 
 	@RequestMapping("/a")
 	public ModelAndView ShowMovies(){ 
+		System.out.println("ssss");
 		ModelAndView mav=new ModelAndView("SingleMovie");
 		mav.addObject("sm",movieService.selectMovies());	
 		return mav;
