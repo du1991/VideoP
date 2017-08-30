@@ -16,6 +16,7 @@ public class SingleMovieController {
 	public ModelAndView ShowSingleMovie(){
 		ModelAndView mav=new ModelAndView("SingleMovie");
 		mav.addObject("sm",movieService.selectMovieById(2));
+		System.out.println("nihao");
 		return mav;
 	}
 }
